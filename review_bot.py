@@ -97,6 +97,7 @@ def create_clickup_task(title, review_url, review_text, response_text, clickup_l
     payload = {
         "name": f"Review: {title}",
         "description": f"""🔗 Review URL: {review_url}
+    
 
 📝 **Review Content**
 {review_text}
@@ -106,7 +107,12 @@ def create_clickup_task(title, review_url, review_text, response_text, clickup_l
 """,
         "status": "to do"
     }
-
+  # ✅ Debug info BEFORE making request
+    print(f"\n🛂 Sending request to ClickUp...")
+    print(f"➡️ URL: {url}")
+    print(f"🧾 Headers: {headers}")
+    print(f"📦 Payload: {payload}")
+    
     response = requests.post(url, json=payload, headers=headers)
 
     if response.status_code in [200, 201]:

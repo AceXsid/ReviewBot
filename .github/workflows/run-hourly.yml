@@ -26,10 +26,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: ⚙️ Run review scraper bot
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+      - name: 🧪 Debug secrets (do not expose real values)
+        run: |
+         echo "OpenAI key length: ${#OPENAI_API_KEY}"
+    echo "ClickUp token length: ${#CLICKUP_API_TOKEN}"
+  env:
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
         run: python review_bot.py
 
       - name: 💾 Commit updated seen_reviews.txt

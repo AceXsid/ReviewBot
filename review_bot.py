@@ -6,12 +6,10 @@
 
 # # ✅ OpenAI API key
 # openai.api_key = os.getenv("OPENAI_API_KEY")
-# # openai.api_key = "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"
 
 # # ✅ ClickUp credentials
 # CLICKUP_LIST_ID = "901607808438"  # ✅ Your actual List ID
 # CLICKUP_API_TOKEN = os.getenv("CLICKUP_API_TOKEN")
-# # CLICKUP_API_TOKEN = "pk_94894049_9FJIPCK5U1F10Z4RQZ02UHDCEAAZ9P59"
 
 # # ✅ List of plugin review URLs
 # REVIEW_URLS = [

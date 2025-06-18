@@ -205,7 +205,7 @@ def get_review_links(base_url, limit=5):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
     }
     response = requests.get(base_url, headers=headers)
-    print(f"[DEBUG HTML FROM] {base_url}\n{response.text[:1000]}")
+    # print(f"[DEBUG HTML FROM] {base_url}\n{response.text[:1000]}")
     soup = BeautifulSoup(response.text, "html.parser")
     links = []
 

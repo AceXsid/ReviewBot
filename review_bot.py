@@ -181,8 +181,9 @@ import os
 # ✅ OpenAI API key
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+
 # ✅ ClickUp credentials
-CLICKUP_LIST_ID = "901607808438"
+CLICKUP_LIST_ID = "901607387060"
 CLICKUP_API_TOKEN = os.getenv("CLICKUP_API_TOKEN")
 
 # ✅ List of plugin review URLs
@@ -297,7 +298,8 @@ def create_clickup_task(title, review_url, review_text, response_text, clickup_l
 💬 **Generated Response**
 {response_text}
 """,
-        "status": "to do"
+        "status": "to do",
+         "assignees": [94894049, 94894033, 94892542]
     }
 
     response = requests.post(url, json=payload, headers=headers)

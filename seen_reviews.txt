@@ -59,3 +59,4 @@ https://wordpress.org/support/topic/best-widget-builder/
 https://wordpress.org/support/topic/best-plugin-and-awesome-support-6/
 https://wordpress.org/support/topic/awesome-support-944/
 https://wordpress.org/support/topic/easy-to-use-excellent-support-14/
+https://wordpress.org/support/topic/a-lightweight-solution-for-wordpress-blocks/

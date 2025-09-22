@@ -63,3 +63,4 @@ https://wordpress.org/support/topic/a-lightweight-solution-for-wordpress-blocks/
 https://wordpress.org/support/topic/a-true-gem-with-outstanding-support/
 https://wordpress.org/support/topic/simply-outstanding-19/
 https://wordpress.org/support/topic/solid-plugin-with-great-support-19/
+https://wordpress.org/support/topic/awesome-full-site-editing-for-cpts-in-classic-themes/
